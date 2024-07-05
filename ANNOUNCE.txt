@@ -5,7 +5,11 @@ files, primarily source code.
  Git:          https://github.com/rsalmaso/grin3
  Git (mirror): https://gitlab.com/rsalmaso/grin3
  License:      BSD
- 
+
+grin 2.2.0 is a feature release.
+
+  * Add --count-only option
+
 grin 2.1.1 just updates source URLs
 
 grin 2.1.0 is a feature release.

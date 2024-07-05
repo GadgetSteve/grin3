@@ -234,6 +234,14 @@ def get_grin_arg_parser(parser=None):
         help="show the matches with the filenames",
     )
     parser.add_argument(
+        "-c",
+        "--count-only",
+        action="store_true",
+        dest="show_counts",
+        default=False,
+        help="Show the match counts for each file (only showing the files with matches)",
+    )
+    parser.add_argument(
         "--no-color",
         action="store_true",
         default=sys.platform == "win32",

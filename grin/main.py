@@ -333,6 +333,12 @@ class GrepText:
             # Just show the filename if we match.
             line = "%s\n" % filename
             lines.append(line)
+        elif self.options.show_counts:
+            occurances = 0
+            for i, kind, line, spans in context_lines:
+                occurances += len(spans)
+            line = "%s : %d" % (filename, occurances)
+            lines.append(line)
         else:
             if (
                 self.options.show_filename
